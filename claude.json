@@ -1,0 +1,19 @@
+{
+  "name": "agentseller-temu-confirm",
+  "version": "1.0.0",
+  "description": "Temu Agentseller 邮件验证自动化工具 - 自动批量处理 Confirm 确认任务",
+  "author": "mcliu",
+  "license": "MIT",
+  "entry": "run_temu_full_fixed.py",
+  "scripts": {
+    "start": "python3 run_temu_full_fixed.py",
+    "loop": "python3 run_until_complete.py",
+    "reset": "echo '{\"last_page\": 0}' > page_record_temu.json"
+  },
+  "dependencies": {
+    "python": ">=3.8",
+    "playwright": ">=1.40.0"
+  },
+  "categories": ["automation", "browser", "temu", "agentseller"],
+  "keywords": ["temu", "agentseller", "email-validate", "confirm", "playwright", "automation"]
+}
